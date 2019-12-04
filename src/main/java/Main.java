@@ -1,6 +1,7 @@
 public class Main {
     static ThreadOne thread1;
     static ThreadTwo thread2;
+
     public static void main(String[] args) throws InterruptedException {
         thread1 = new ThreadOne(50);
         thread2 = new ThreadTwo(25);
@@ -11,7 +12,7 @@ public class Main {
 
         for (int i = 1; i < 3; i++) {
             try {
-                Thread.sleep(i*2*2000);
+                Thread.sleep(i * 2 * 2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
